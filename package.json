@@ -1,0 +1,27 @@
+{
+  "name": "discordproject",
+  "version": "1.0.0",
+  "description": "A nice bot for my discord server",
+  "main": "bot.js",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "@google-cloud/text-to-speech": "^2.3.0",
+    "ascii-table": "0.0.9",
+    "axios": "^0.19.2",
+    "discord.js": "^12.0.2",
+    "express": "^4.17.1",
+    "fs-readdir-recursive": "^1.1.0",
+    "simple-node-logger": "^18.12.24",
+    "sqlite3": "^4.1.1",
+    "stream-buffers": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "gauthier",
+  "license": "ISC"
+}

@@ -1,0 +1,42 @@
+body {
+    background-color: white;
+}
+
+.blinking { 
+    background-color: green;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    margin-left: auto;
+    animation: blink 2s infinite 2s;
+}
+
+.info {
+    margin-right: auto;
+    padding: 0 0.5em;
+}
+
+.flex {
+    display: flex;
+}
+
+#status {
+    background-color: #eeeeee;
+    border-radius: 5%;
+    box-shadow: grey;
+    text-align: center;
+    margin: 1em 10em;
+    padding: 1em;
+    font-size: 100%;
+    font-family: Raleway;
+}
+
+#status img {
+    width: 50%;
+    height: auto;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}

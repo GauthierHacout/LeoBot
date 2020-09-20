@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta>
+    <title>Leo Bot</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="status">
+        <img src="./LeoLangue.png"/> 
+        <div class="flex">
+            <div class="blinking"></div>
+            <div class="info">Leo Bot is alive and running !</div>
+        </div>
+    </div>
+
+    <div id="app">
+        <!-- :src can be used for v-bind:src -->
+        <!--<img v-bind:src="leo"/> --> 
+        <h1>{{title}}</h1>
+        <p v-if="boolean"> TRUE </p>
+        <p v-else-if="inventory < 10">ALMOST</p>
+        <p v-else> FALSE </p>
+
+        <p v-show="boolean"> Either display content or not depending on boolean</p>
+
+        <ul>
+            <li v-for="item in list":key="item.id">{{item.desc}} | {{item.qty}}</li>
+        </ul>
+    </div>
+
+    <div id="event">
+        <p>NUMBER {{number}}</p>
+        <h2> {{title}} </h2>
+        <!-- v-on:click can be transformed into @click -->
+        <button v-on:click="addOne"> ADD 1 </button>
+        <div v-for="item in list":key="item.id" v-bind:style="color">
+            <p @mouseover="changeColor(item.color)"> HOVER ME {{item.color}} </p>
+        </div>
+
+        <product :test="test" @add-one="addOne">
+        </product>
+
+    </div>
+
+    <!-- Dev Build for Vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>

@@ -1,0 +1,21 @@
+# IDE config files
+.idea
+.vscode
+
+# CSV files
+database/discord_guild_db/*
+
+# Dev
+.eslintrc.json
+.gcloudignore
+node_modules
+
+# Assets
+assets/time_bomb/*.piskel
+
+# Configuration
+app.yaml
+config.json
+
+# Logs
+logs/*.log
