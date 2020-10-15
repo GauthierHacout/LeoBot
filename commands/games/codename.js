@@ -124,7 +124,7 @@ module.exports = {
     },
 };
 
-/** Create an AsciiTable from an Array and return it the form of a string
+/** Create an AsciiTable from an Array and return it in the form of a string
  * @param {Array} array an array with the content of the table (e.g ["A", "B", "C"...])
  * @return {String} (e.g "A B C D E \nF G H I J\n")
  */
